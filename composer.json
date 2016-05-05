@@ -1,0 +1,15 @@
+{
+	"name" : "3 - OO - Refatoração",
+	"authors" : [
+        {
+			"name" : "Marcus V. Nash",
+			"email" : "marcusvinicius@afixar.com.br"
+		}
+	],
+    "autoload": {
+        "psr-0": { "AppCode": "src/AppCode" }
+    },
+    "require": {
+        "php": ">=5.2.8"
+    }
+} 
