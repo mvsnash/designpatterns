@@ -1,8 +1,6 @@
-1º Projeto | Módulo 04 - Design Patterns
+Projeto | Módulo 04 - Design Patterns
 ================================================
 
-Projeto - Formulário Básico.
---------------------------------
 
 Obs: *Os arquivos aqui adicionados fazem parte do curso do portal codeeducation! Módulo 04 - Design Patterns.*
 
