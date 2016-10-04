@@ -7,7 +7,9 @@
 		}
 	],
     "autoload": {
-        "psr-0": { "AppCode": "src/AppCode" }
+        "psr-4": {
+          "AppCode\\": "src/AppCode"
+        }
     },
     "require": {
         "php": ">=5.2.8"

@@ -5,6 +5,7 @@
 <h1>Formulário</h1>
 
 <?php
+$loader = require_once '../vendor/autoload.php';
 
 use AppCode\Form\Rendering;
 
