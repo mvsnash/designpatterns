@@ -95,10 +95,8 @@ class Form implements FormInterface {
 
 
     public function addField(ElementInterface $field){
-
-
         $this->fields[] = $field;
-
+        return $this;
     }
 
 

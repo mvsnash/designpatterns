@@ -5,6 +5,35 @@
 <h1>Formulário</h1>
 
 <?php
+$loader = require_once '../vendor/autoload.php';
+
+
+
+$request = new \AppCode\Form\Requests\Request();
+$validator = new \AppCode\Form\Validators\Validator($request);
+$form = new \AppCode\Form\Form($validator);
+
+$labelNome = new \AppCode\Form\Elements\Label();
+$labelNome->setText("Nome");
+
+$inputNome = new \AppCode\Form\Elements\Input();
+$inputNome->setAttribute("placeholder", "Insira o seu nome")->setAttribute("class","form-control")->setUnified(true);
+
+
+$labelEmail = new \AppCode\Form\Elements\Label();
+$labelEmail->setText("Email");
+
+$inputEmail = new \AppCode\Form\Elements\Input();
+$inputEmail->setAttribute("placeholder", "Insira o seu email")->setAttribute("class","form-control")->setUnified(true);
+
+$fieldSet = new \AppCode\Form\Elements\Fieldset();
+$fieldSet->setLegend("Dados Pessoais")->addField($labelNome)->addField($inputNome)->addField($labelEmail)->addField($inputEmail);
+
+$form->addField($fieldSet);
+$form->render();
+
+
+/*
 
 use AppCode\Form\Rendering;
 
@@ -68,7 +97,7 @@ $cols[] = array(
 $form = new Rendering($cols);
 
 
-
+*/
 
 
 
