@@ -8,10 +8,7 @@ class Input extends ElementAbstract
 
     public function render()
     {
-
-
-        if($this->getUnified() == false  || $this->getUnified() == 'first'){
-
+        if((!$this->getUnified())  || ($this->getUnified() === 'first')){
             echo "<div class='col-sm-10 '>";
         }
 
@@ -23,7 +20,7 @@ class Input extends ElementAbstract
 
         if($this->getText() != null){ echo ' '.$this->getText(); }
 
-        if($this->getUnified() == false || $this->getUnified() == 'last'){
+        if((!$this->getUnified())  || ($this->getUnified() === 'last')){
 
             echo "\n</div>\n</div>\n";
 
